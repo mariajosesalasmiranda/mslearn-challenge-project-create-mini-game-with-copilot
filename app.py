@@ -1,4 +1,4 @@
-import random
+import random # Be the user's opponent
 
 def determine_winner(player_choice, computer_choice):
     if player_choice == computer_choice:
@@ -17,10 +17,10 @@ def play_game():
     
     while True:
         print("Enter your choice: rock, paper, or scissors (or 'exit' to quit)")
-        player_input = input().lower()
+        player_input = input().lower() # Get a user input. Convert to lowercase.
         
         if player_input == 'exit':
-            break
+            break # End a repetition structure
         
         if player_input not in options:
             print("Invalid choice. Please enter rock, paper, or scissors.")
